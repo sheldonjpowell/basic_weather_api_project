@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script src="./weather.js" defer></script> <!-- add defer to script tag or put script element at ottom of body -->
+        <title>To The Sky App</title>
+    </head>
+    <body>
+         <nav class="navbar navbar-light bg-RGB(239, 192, 80)">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1"></span>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class="text-center mb-3" id="top-header"><strong>TO THE SKY</strong></h1>
+
+            <div class="d-flex justify-content-center">
+                <form action="" id="city">
+                    <div>
+                        <div class="">
+                            <input class="form-control text-center" name="cityName" type="text" placeholder="Enter City"/>
+                        </div>
+                        <div>
+                            <input type="submit" class="btn btn-primary d-block w-100"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center py-5"  id="weatherDisplay">
+                <!-- <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">High: 22</h5>
+                    </div>
+                </div> -->
+                   
+                
+                <!-- JavaScript will grab this row and add columns with cards to it when form is submitted -->
+            </div>
+            
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
