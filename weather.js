@@ -2,6 +2,7 @@
 
 {
     document.body.style.backgroundColor = "RGB(239, 192, 80)";
+    const weatherAPI = ''
     
     //Grab the form
     let form = document.getElementById('city');
@@ -23,15 +24,20 @@
 
 
     async function getCityInfo(cityName) {
+        
 
         try{
-            let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=`)
+            let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${weatherAPI}&units=imperial`)
             let data = await res.json()
             return data
         } catch(e){
             console.error(e)
         }
     }
+
+
+    /////////////////////////////////////////
+    /////////////////////////////////////////
 
     async function buildCityCard(city){
         const weatherDisplay = document.getElementById('weatherDisplay');
@@ -61,8 +67,8 @@
         // console.log(temp)
 
         ////////////////////////////////////////////
+                    // High Temp //
         ////////////////////////////////////////////
-        // High Temp //
 
         const card2 = document.createElement('div');
         card2.className = 'card';
@@ -89,8 +95,8 @@
         // console.log(temp)
 
         ////////////////////////////////////////////
+                    // Low Temp //
         ////////////////////////////////////////////
-        // Low Temp //
         const card3 = document.createElement('div');
         card3.className = 'card';
 
@@ -115,8 +121,8 @@
         // console.log(temp)
 
         ////////////////////////////////////////////
+                // Feels Like Temp //
         ////////////////////////////////////////////
-        // Feels Like Temp //
         const card4 = document.createElement('div');
         card4.className = 'card';
 
