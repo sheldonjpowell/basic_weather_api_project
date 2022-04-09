@@ -53,8 +53,11 @@
         // adding h5 to cardBody and cardBody to card
         cardBody.append(temp)
         card.append(cardBody)
+        const space = document.createElement('br')
 
         weatherDisplay.append(card)
+        weatherDisplay.append(space)
+
         // console.log(temp)
 
         ////////////////////////////////////////////
@@ -72,6 +75,7 @@
         const temp2 = document.createElement('h5');
         temp2.className = 'card-title';
         temp2.innerHTML = `High: ${rTemp_max}\u00B0`;
+        const space2 = document.createElement('br')
         // console.log(rTemp)
         
         // adding h5 to cardBody and cardBody to card
@@ -80,6 +84,7 @@
 
 
         weatherDisplay.append(card2)
+        weatherDisplay.append(space2)
 
         // console.log(temp)
 
@@ -98,7 +103,7 @@
         temp3.className = 'card-title';
         temp3.innerHTML = `Low: ${rTemp_min}\u00B0`;
         // console.log(rTemp)
-        
+        const space3 = document.createElement('br')
         // adding h5 to cardBody and cardBody to card
         cardBody3.append(temp3)
         card3.append(cardBody3)
@@ -106,6 +111,7 @@
 
 
         weatherDisplay.append(card3)
+        weatherDisplay.append(space3)
         // console.log(temp)
 
         ////////////////////////////////////////////
@@ -123,6 +129,7 @@
         temp4.className = 'card-title';
         temp4.innerHTML = `Feels Like: ${rTemp_feel}\u00B0`;
         // console.log(rTemp)
+        const space4 = document.createElement('br')
         
         // adding h5 to cardBody and cardBody to card
         cardBody4.append(temp4)
@@ -131,6 +138,7 @@
 
 
         weatherDisplay.append(card4)
+        weatherDisplay.append(space4)
         // console.log(temp)
 
    
